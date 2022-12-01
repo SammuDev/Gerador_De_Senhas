@@ -18,8 +18,6 @@ function geraPassword(qnt, maior, menor, num, simb) {
     }
 
     return senhasArr.join('').slice(0, qnt);
-    // pass.innerText = '';
-    // pass.innerHTML = senhasArr.join('').slice(0, qnt);
 }
 
 const inputSenha = document.querySelector('.password');
@@ -45,9 +43,8 @@ function gera() {
 }
 
 button.addEventListener('click', () => {
-    console.log('OI!');
     inputSenha.innerHTML = '';
     inputSenha.innerText = gera();
 });
 
-gera();
+// gera();
