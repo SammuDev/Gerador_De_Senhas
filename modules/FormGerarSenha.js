@@ -3,26 +3,29 @@ import geraPassword from "./Geradores";
 const inputSenha = document.querySelector('.password');
 const button = document.querySelector('.btn');
 
-const inputQnt = document.querySelector('.qnt');
-const ipt1 = document.querySelector('.ipt1');
-const ipt2 = document.querySelector('.ipt2');
-const ipt3 = document.querySelector('.ipt3');
-const ipt4 = document.querySelector('.ipt4');
+const iptQnt = document.querySelector('.iptQnt');
+
+const iptMaior = document.querySelector('.iptMaior');
+const iptMenor = document.querySelector('.iptMenor');
+const iptNum = document.querySelector('.iptNum');
+const iptSym = document.querySelector('.iptSym');
 
 function gera() {
     const senha = geraPassword(
-     inputQnt.value,
-     ipt1.checked,
-     ipt2.checked,
-     ipt3.checked,
-     ipt4.checked,
+    iptQnt.value,
+     
+    iptMaior.checked,
+    iptMenor.checked,
+    iptNum.checked,
+    iptSym.checked,
     );
     return senha || 'Selecione Uma Opção Válida!';
 }
 
 export default () => {
     button.addEventListener('click', () => {
-        // inputSenha.innerHTML = '';
-        inputSenha.innerHTML = gera();
+        console.log('OI!');
+        inputSenha.innerHTML = '';
+        inputSenha.innerText = gera();
     });
 }
