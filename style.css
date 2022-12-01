@@ -1,25 +1,34 @@
+.div {
+    background-color: dimgrey;
+    border: 3px solid #c0c0c067;
+    border-radius: 10px;
+    color: #fff;
+    margin: 15px auto;
+    padding: 15px;
+    width: 40%;
+}
 h2 {
     text-align: center;
 }
 .password {    
-    color: rgb(0, 117, 252);
-    margin: 30px 0;
+    color: rgba(255, 255, 255, 0.418);
+    margin: 20px 0;
     padding: 10px;
     font-size: 2.5em;
 }
-.options {
+button {
+    width: 15%;
+    height: 50px;
+    font-weight: bold;
+}
+.options, .qnt {
     font-size: 2em;
 }
 input[type='checkbox'] {
     width: 20px;
     height: 20px;
 }
-.div {
-    background-color: dimgrey;
-    border: 3px solid #c0c0c067;
-    border-radius: 10px;
-    color: #fff;
-    margin: 50px auto;
-    padding: 30px;
-    width: 40%;
+.qnt input {
+    width: 60px;
+    height: 20px;
 }

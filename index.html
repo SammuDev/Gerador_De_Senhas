@@ -10,21 +10,38 @@
 
 <body>    
     <div class="div">
-        <h2>Gere Uma Senha:</h2>
+        <h2>Gerador De Senhas:</h2>
 
-        <p class="password"></p>
+        <p class="password">Senha!</p>
+
+        <button class="btn">GERAR</button>
         
-        <p class="options">Quantdade De Caracteres: <input type="checkbox" id=""></p>
+        <p class="qnt">
+            <label for="qnt">Quantidade De Caracteres: </label>
+            <input class="ipt3" value="1" type="number" min="1" max="50">
+        </p>
 
-        <p class="options">Adicionar Maiúsculas: <input type="checkbox" id=""></p>
+        <p class="options">
+            <label for="ipt1">Adicionar Maiúsculas: </label>
+            <input class="ipt3" type="checkbox" id="ipt1">
+        </p>
 
-        <p class="options">Adicionar Minúsculas: <input type="checkbox" id=""></p>
+        <p class="options">
+            <label for="ipt2">Adicionar Minúsculas: </label>
+            <input class="ipt3" type="checkbox" id="ipt2">
+        </p>
 
-        <p class="options">Adicionar Números: <input type="checkbox" id=""></p>
+        <p class="options">
+            <label for="ipt3">Adicionar Números: </label>
+            <input class="ipt3" type="checkbox">
+        </p>
         
-        <p class="options">Adicionar Símbolos: <input type="checkbox" id=""></p>
+        <p class="options">
+            <label for="ipt4">Adicionar Símbolos: </label>
+            <input class="ipt3" type="checkbox" id="ipt4">
+        </p>
     </div>
     
-    <script src="script.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
