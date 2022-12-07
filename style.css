@@ -22,7 +22,7 @@ button {
     height: 50px;
     font-weight: bold;
 }
-.options, .qnt {
+.options {
     font-size: 2em;
 }
 input[type='checkbox'] {
@@ -32,4 +32,33 @@ input[type='checkbox'] {
 .qnt input {
     width: 60px;
     height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .div {
+        width: 85%;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    button {
+        width: 100%;
+    }
+    .options {
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .div {
+        width: 85%;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    button {
+        width: 100%;
+    }
+    .options {
+        font-size: 2em;
+    }
 }
